@@ -1,0 +1,16 @@
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\bin\Release\EvidencijaSSS.exe.config
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\bin\Release\EvidencijaSSS.exe.manifest
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\bin\Release\EvidencijaSSS.application
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\bin\Release\EvidencijaSSS.exe
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\bin\Release\EvidencijaSSS.pdb
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\EmployeeWorkingReport.frmMain.resources
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\EmployeeWorkingReport.Properties.Resources.resources
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\EmployeeWorkingReport.csproj.GenerateResource.Cache
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\RdlCompile.cache
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\RdlCompile.compiled
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\EvidencijaSSS.TrustInfo.xml
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\EvidencijaSSS.exe.manifest
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\EvidencijaSSS.application
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\EvidencijaSSS.exe
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\EvidencijaSSS.pdb
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\EmployeeWorkingReport.csprojResolveAssemblyReference.cache

@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EvidencijaDataSet" targetNamespace="http://tempuri.org/EvidencijaDataSet.xsd" xmlns:mstns="http://tempuri.org/EvidencijaDataSet.xsd" xmlns="http://tempuri.org/EvidencijaDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="EvidencijaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EvidencijaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.EmployeeWorkingReport.Properties.Settings.GlobalReference.Default.EvidencijaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="WorkDayReportTableAdapter" GeneratorDataComponentClassName="WorkDayReportTableAdapter" Name="WorkDayReport" UserDataComponentName="WorkDayReportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EvidencijaConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        WorkDay.ID, WorkDay.UserID, WorkDay.Datum, WorkDay.WorkStart, WorkDay.WorkEnd, WorkDay.WorkInLoged, WorkDay.WorkOutLoged, WorkDay.BreakTime, 
+                         WorkDay.BreakNumber, WorkDay.BreakLoged, WorkDay.BreakOvertime, WorkDay.BusinessTime, WorkDay.BusinessNumber, WorkDay.WorkDayTime, 
+                         WorkDay.WorkingTime, WorkDay.OverTime, WorkDay.LessTime, WorkDay.Late, WorkDay.WorkDayType, WorkDay.SundayTime, WorkDay.NightTime, 
+                         WorkDay.SchedualeID, WorkDay.LogsNotOK, Users.UserName, Users.FirstName, Users.LastName
+FROM            WorkDay INNER JOIN
+                         Users ON WorkDay.UserID = Users.ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="UserID" DataSetColumn="UserID" />
+              <Mapping SourceColumn="WorkStart" DataSetColumn="WorkStart" />
+              <Mapping SourceColumn="WorkEnd" DataSetColumn="WorkEnd" />
+              <Mapping SourceColumn="WorkInLoged" DataSetColumn="WorkInLoged" />
+              <Mapping SourceColumn="WorkOutLoged" DataSetColumn="WorkOutLoged" />
+              <Mapping SourceColumn="BreakTime" DataSetColumn="BreakTime" />
+              <Mapping SourceColumn="BreakNumber" DataSetColumn="BreakNumber" />
+              <Mapping SourceColumn="BreakLoged" DataSetColumn="BreakLoged" />
+              <Mapping SourceColumn="BreakOvertime" DataSetColumn="BreakOvertime" />
+              <Mapping SourceColumn="BusinessTime" DataSetColumn="BusinessTime" />
+              <Mapping SourceColumn="BusinessNumber" DataSetColumn="BusinessNumber" />
+              <Mapping SourceColumn="WorkDayTime" DataSetColumn="WorkDayTime" />
+              <Mapping SourceColumn="WorkingTime" DataSetColumn="WorkingTime" />
+              <Mapping SourceColumn="OverTime" DataSetColumn="OverTime" />
+              <Mapping SourceColumn="LessTime" DataSetColumn="LessTime" />
+              <Mapping SourceColumn="Late" DataSetColumn="Late" />
+              <Mapping SourceColumn="WorkDayType" DataSetColumn="WorkDayType" />
+              <Mapping SourceColumn="SundayTime" DataSetColumn="SundayTime" />
+              <Mapping SourceColumn="NightTime" DataSetColumn="NightTime" />
+              <Mapping SourceColumn="SchedualeID" DataSetColumn="SchedualeID" />
+              <Mapping SourceColumn="LogsNotOK" DataSetColumn="LogsNotOK" />
+              <Mapping SourceColumn="UserName" DataSetColumn="UserName" />
+              <Mapping SourceColumn="FirstName" DataSetColumn="FirstName" />
+              <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
+              <Mapping SourceColumn="Datum" DataSetColumn="Datum" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="EvidencijaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQuery" Modifier="Public" Name="DeleteQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteQuery">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM WorkDayReport</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="EvidencijaConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByDate" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetbyDate" GeneratorSourceName="FillByDate" GetMethodModifier="Public" GetMethodName="GetbyDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetbyDate" UserSourceName="FillByDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        WorkDay.ID, WorkDay.UserID, WorkDay.Datum, WorkDay.WorkStart, WorkDay.WorkEnd, WorkDay.WorkInLoged, WorkDay.WorkOutLoged, WorkDay.BreakTime, 
+                         WorkDay.BreakNumber, WorkDay.BreakLoged, WorkDay.BreakOvertime, WorkDay.BusinessTime, WorkDay.BusinessNumber, WorkDay.WorkDayTime, 
+                         WorkDay.WorkingTime, WorkDay.OverTime, WorkDay.LessTime, WorkDay.Late, WorkDay.WorkDayType, WorkDay.SundayTime, WorkDay.NightTime, 
+                         WorkDay.SchedualeID, WorkDay.LogsNotOK, Users.UserName, Users.FirstName, Users.LastName
+FROM            WorkDay INNER JOIN
+                         Users ON WorkDay.UserID = Users.ID WHERE Datum &gt;= @StartDate AND Datum &lt;= @EndDate
+ORDER BY WorkDay.UserID, Datum;</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="StartDate" ColumnName="Datum" DataSourceName="master1.dbo.WorkDay" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@StartDate" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Datum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="EndDate" ColumnName="Datum" DataSourceName="master1.dbo.WorkDay" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@EndDate" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Datum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="EvidencijaConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByDateAndUser" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByDateAndUser" GeneratorSourceName="FillByDateAndUser" GetMethodModifier="Public" GetMethodName="GetDataByDateAndUser" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByDateAndUser" UserSourceName="FillByDateAndUser">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        WorkDay.ID, WorkDay.UserID, WorkDay.Datum, WorkDay.WorkStart, WorkDay.WorkEnd, WorkDay.WorkInLoged, WorkDay.WorkOutLoged, WorkDay.BreakTime, 
+                         WorkDay.BreakNumber, WorkDay.BreakLoged, WorkDay.BreakOvertime, WorkDay.BusinessTime, WorkDay.BusinessNumber, WorkDay.WorkDayTime, 
+                         WorkDay.WorkingTime, WorkDay.OverTime, WorkDay.LessTime, WorkDay.Late, WorkDay.WorkDayType, WorkDay.SundayTime, WorkDay.NightTime, 
+                         WorkDay.SchedualeID, WorkDay.LogsNotOK, Users.UserName, Users.FirstName, Users.LastName
+FROM            WorkDay INNER JOIN
+                         Users ON WorkDay.UserID = Users.ID
+WHERE WorkDay.Datum &gt;= @StartDate AND WorkDay.Datum &lt;= @EndDate AND WorkDay.UserID = @SelectedUser ORDER BY WorkDay.Datum;</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="StartDate" ColumnName="Datum" DataSourceName="master1.dbo.WorkDay" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@StartDate" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Datum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="EndDate" ColumnName="Datum" DataSourceName="master1.dbo.WorkDay" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@EndDate" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Datum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="SelectedUser" ColumnName="UserID" DataSourceName="master1.dbo.WorkDay" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@SelectedUser" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="UserID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UsersTableAdapter" GeneratorDataComponentClassName="UsersTableAdapter" Name="Users" UserDataComponentName="UsersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EvidencijaConnectionString (Settings)" DbObjectName="master1.dbo.Users" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Users] WHERE (([ID] = @Original_ID) AND ((@IsNull_EnrollID = 1 AND [EnrollID] IS NULL) OR ([EnrollID] = @Original_EnrollID)) AND ([UserName] = @Original_UserName) AND ([FirstName] = @Original_FirstName) AND ([LastName] = @Original_LastName) AND ([Password] = @Original_Password) AND ([UserPrivlage] = @Original_UserPrivlage) AND ([Active] = @Original_Active) AND ([Address] = @Original_Address) AND ((@IsNull_PostalCode = 1 AND [PostalCode] IS NULL) OR ([PostalCode] = @Original_PostalCode)) AND ((@IsNull_City = 1 AND [City] IS NULL) OR ([City] = @Original_City)) AND ((@IsNull_Phone = 1 AND [Phone] IS NULL) OR ([Phone] = @Original_Phone)) AND ((@IsNull_MobilePhone = 1 AND [MobilePhone] IS NULL) OR ([MobilePhone] = @Original_MobilePhone)) AND ([SchedualeID] = @Original_SchedualeID) AND ([DepartmentID] = @Original_DepartmentID) AND ((@IsNull_CardID = 1 AND [CardID] IS NULL) OR ([CardID] = @Original_CardID)) AND ((@IsNull_OIB = 1 AND [OIB] IS NULL) OR ([OIB] = @Original_OIB)) AND ((@IsNull_Sex = 1 AND [Sex] IS NULL) OR ([Sex] = @Original_Sex)) AND ((@IsNull_BirthDate = 1 AND [BirthDate] IS NULL) OR ([BirthDate] = @Original_BirthDate)) AND ((@IsNull_InternalID = 1 AND [InternalID] IS NULL) OR ([InternalID] = @Original_InternalID)) AND ((@IsNull_WorkBeginDate = 1 AND [WorkBeginDate] IS NULL) OR ([WorkBeginDate] = @Original_WorkBeginDate)) AND ((@IsNull_ContractBeginDate = 1 AND [ContractBeginDate] IS NULL) OR ([ContractBeginDate] = @Original_ContractBeginDate)) AND ((@IsNull_WorkTitle = 1 AND [WorkTitle] IS NULL) OR ([WorkTitle] = @Original_WorkTitle)) AND ([ContractTypeID] = @Original_ContractTypeID))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EnrollID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EnrollID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EnrollID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EnrollID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_UserName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="UserName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FirstName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FirstName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_LastName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LastName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Password" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Password" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_UserPrivlage" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UserPrivlage" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_Active" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Active" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Address" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Address" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PostalCode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PostalCode" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PostalCode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PostalCode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_City" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="City" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_City" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="City" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Phone" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Phone" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Phone" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Phone" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MobilePhone" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MobilePhone" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MobilePhone" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MobilePhone" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_SchedualeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SchedualeID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_DepartmentID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DepartmentID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CardID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CardID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CardID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CardID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_OIB" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OIB" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_OIB" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="OIB" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Sex" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Sex" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Sex" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Sex" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BirthDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BirthDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_BirthDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="BirthDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_InternalID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="InternalID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_InternalID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="InternalID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_WorkBeginDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="WorkBeginDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_WorkBeginDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="WorkBeginDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ContractBeginDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ContractBeginDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_ContractBeginDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ContractBeginDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_WorkTitle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="WorkTitle" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_WorkTitle" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WorkTitle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ContractTypeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ContractTypeID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Users] ([ID], [EnrollID], [UserName], [FirstName], [LastName], [Password], [UserPrivlage], [Active], [Address], [PostalCode], [City], [Phone], [MobilePhone], [SchedualeID], [DepartmentID], [CardID], [OIB], [Sex], [BirthDate], [InternalID], [WorkBeginDate], [ContractBeginDate], [WorkTitle], [ContractTypeID]) VALUES (@ID, @EnrollID, @UserName, @FirstName, @LastName, @Password, @UserPrivlage, @Active, @Address, @PostalCode, @City, @Phone, @MobilePhone, @SchedualeID, @DepartmentID, @CardID, @OIB, @Sex, @BirthDate, @InternalID, @WorkBeginDate, @ContractBeginDate, @WorkTitle, @ContractTypeID);
+SELECT ID, EnrollID, UserName, FirstName, LastName, Password, UserPrivlage, Active, Address, PostalCode, City, Phone, MobilePhone, SchedualeID, DepartmentID, CardID, OIB, Sex, BirthDate, InternalID, WorkBeginDate, ContractBeginDate, WorkTitle, ContractTypeID FROM Users WHERE (ID = @ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EnrollID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EnrollID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@UserName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="UserName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FirstName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FirstName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@LastName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LastName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Password" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Password" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@UserPrivlage" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UserPrivlage" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Active" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Active" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Address" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Address" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PostalCode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PostalCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@City" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="City" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Phone" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Phone" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MobilePhone" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MobilePhone" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@SchedualeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SchedualeID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@DepartmentID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DepartmentID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CardID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CardID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@OIB" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="OIB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Sex" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Sex" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@BirthDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="BirthDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@InternalID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="InternalID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@WorkBeginDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="WorkBeginDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@ContractBeginDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ContractBeginDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@WorkTitle" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WorkTitle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ContractTypeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ContractTypeID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, EnrollID, UserName, FirstName, LastName, Password, UserPrivlage, Active, Address, PostalCode, City, Phone, MobilePhone, SchedualeID, DepartmentID, CardID, OIB, Sex, BirthDate, InternalID, WorkBeginDate, ContractBeginDate, WorkTitle, ContractTypeID FROM dbo.Users</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Users] SET [ID] = @ID, [EnrollID] = @EnrollID, [UserName] = @UserName, [FirstName] = @FirstName, [LastName] = @LastName, [Password] = @Password, [UserPrivlage] = @UserPrivlage, [Active] = @Active, [Address] = @Address, [PostalCode] = @PostalCode, [City] = @City, [Phone] = @Phone, [MobilePhone] = @MobilePhone, [SchedualeID] = @SchedualeID, [DepartmentID] = @DepartmentID, [CardID] = @CardID, [OIB] = @OIB, [Sex] = @Sex, [BirthDate] = @BirthDate, [InternalID] = @InternalID, [WorkBeginDate] = @WorkBeginDate, [ContractBeginDate] = @ContractBeginDate, [WorkTitle] = @WorkTitle, [ContractTypeID] = @ContractTypeID WHERE (([ID] = @Original_ID) AND ((@IsNull_EnrollID = 1 AND [EnrollID] IS NULL) OR ([EnrollID] = @Original_EnrollID)) AND ([UserName] = @Original_UserName) AND ([FirstName] = @Original_FirstName) AND ([LastName] = @Original_LastName) AND ([Password] = @Original_Password) AND ([UserPrivlage] = @Original_UserPrivlage) AND ([Active] = @Original_Active) AND ([Address] = @Original_Address) AND ((@IsNull_PostalCode = 1 AND [PostalCode] IS NULL) OR ([PostalCode] = @Original_PostalCode)) AND ((@IsNull_City = 1 AND [City] IS NULL) OR ([City] = @Original_City)) AND ((@IsNull_Phone = 1 AND [Phone] IS NULL) OR ([Phone] = @Original_Phone)) AND ((@IsNull_MobilePhone = 1 AND [MobilePhone] IS NULL) OR ([MobilePhone] = @Original_MobilePhone)) AND ([SchedualeID] = @Original_SchedualeID) AND ([DepartmentID] = @Original_DepartmentID) AND ((@IsNull_CardID = 1 AND [CardID] IS NULL) OR ([CardID] = @Original_CardID)) AND ((@IsNull_OIB = 1 AND [OIB] IS NULL) OR ([OIB] = @Original_OIB)) AND ((@IsNull_Sex = 1 AND [Sex] IS NULL) OR ([Sex] = @Original_Sex)) AND ((@IsNull_BirthDate = 1 AND [BirthDate] IS NULL) OR ([BirthDate] = @Original_BirthDate)) AND ((@IsNull_InternalID = 1 AND [InternalID] IS NULL) OR ([InternalID] = @Original_InternalID)) AND ((@IsNull_WorkBeginDate = 1 AND [WorkBeginDate] IS NULL) OR ([WorkBeginDate] = @Original_WorkBeginDate)) AND ((@IsNull_ContractBeginDate = 1 AND [ContractBeginDate] IS NULL) OR ([ContractBeginDate] = @Original_ContractBeginDate)) AND ((@IsNull_WorkTitle = 1 AND [WorkTitle] IS NULL) OR ([WorkTitle] = @Original_WorkTitle)) AND ([ContractTypeID] = @Original_ContractTypeID));
+SELECT ID, EnrollID, UserName, FirstName, LastName, Password, UserPrivlage, Active, Address, PostalCode, City, Phone, MobilePhone, SchedualeID, DepartmentID, CardID, OIB, Sex, BirthDate, InternalID, WorkBeginDate, ContractBeginDate, WorkTitle, ContractTypeID FROM Users WHERE (ID = @ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EnrollID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EnrollID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@UserName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="UserName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FirstName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FirstName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@LastName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LastName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Password" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Password" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@UserPrivlage" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UserPrivlage" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Active" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Active" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Address" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Address" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PostalCode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PostalCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@City" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="City" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Phone" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Phone" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MobilePhone" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MobilePhone" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@SchedualeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SchedualeID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@DepartmentID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DepartmentID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CardID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CardID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@OIB" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="OIB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Sex" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Sex" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@BirthDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="BirthDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@InternalID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="InternalID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@WorkBeginDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="WorkBeginDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@ContractBeginDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ContractBeginDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@WorkTitle" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WorkTitle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ContractTypeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ContractTypeID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EnrollID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EnrollID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EnrollID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EnrollID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_UserName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="UserName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FirstName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FirstName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_LastName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LastName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Password" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Password" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_UserPrivlage" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UserPrivlage" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_Active" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Active" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Address" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Address" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PostalCode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PostalCode" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PostalCode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PostalCode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_City" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="City" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_City" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="City" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Phone" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Phone" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Phone" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Phone" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MobilePhone" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MobilePhone" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MobilePhone" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MobilePhone" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_SchedualeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SchedualeID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_DepartmentID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DepartmentID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CardID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CardID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CardID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CardID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_OIB" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OIB" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_OIB" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="OIB" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Sex" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Sex" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Sex" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Sex" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BirthDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BirthDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_BirthDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="BirthDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_InternalID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="InternalID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_InternalID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="InternalID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_WorkBeginDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="WorkBeginDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_WorkBeginDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="WorkBeginDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ContractBeginDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ContractBeginDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_ContractBeginDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ContractBeginDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_WorkTitle" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="WorkTitle" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_WorkTitle" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WorkTitle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ContractTypeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ContractTypeID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="EnrollID" DataSetColumn="EnrollID" />
+              <Mapping SourceColumn="UserName" DataSetColumn="UserName" />
+              <Mapping SourceColumn="FirstName" DataSetColumn="FirstName" />
+              <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
+              <Mapping SourceColumn="Password" DataSetColumn="Password" />
+              <Mapping SourceColumn="UserPrivlage" DataSetColumn="UserPrivlage" />
+              <Mapping SourceColumn="Active" DataSetColumn="Active" />
+              <Mapping SourceColumn="Address" DataSetColumn="Address" />
+              <Mapping SourceColumn="PostalCode" DataSetColumn="PostalCode" />
+              <Mapping SourceColumn="City" DataSetColumn="City" />
+              <Mapping SourceColumn="Phone" DataSetColumn="Phone" />
+              <Mapping SourceColumn="MobilePhone" DataSetColumn="MobilePhone" />
+              <Mapping SourceColumn="SchedualeID" DataSetColumn="SchedualeID" />
+              <Mapping SourceColumn="DepartmentID" DataSetColumn="DepartmentID" />
+              <Mapping SourceColumn="CardID" DataSetColumn="CardID" />
+              <Mapping SourceColumn="OIB" DataSetColumn="OIB" />
+              <Mapping SourceColumn="Sex" DataSetColumn="Sex" />
+              <Mapping SourceColumn="BirthDate" DataSetColumn="BirthDate" />
+              <Mapping SourceColumn="InternalID" DataSetColumn="InternalID" />
+              <Mapping SourceColumn="WorkBeginDate" DataSetColumn="WorkBeginDate" />
+              <Mapping SourceColumn="ContractBeginDate" DataSetColumn="ContractBeginDate" />
+              <Mapping SourceColumn="WorkTitle" DataSetColumn="WorkTitle" />
+              <Mapping SourceColumn="ContractTypeID" DataSetColumn="ContractTypeID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UsersAndWorkDaysTableAdapter" GeneratorDataComponentClassName="UsersAndWorkDaysTableAdapter" Name="UsersAndWorkDays" UserDataComponentName="UsersAndWorkDaysTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EvidencijaConnectionString (Settings)" DbObjectName="master1.dbo.Users" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Users.UserName, COUNT(Users.UserName) as 'Dolasci' FROM WorkDay, Users WHERE WorkDay.UserID = Users.ID AND Datum &gt;= @StartDate AND Datum &lt;= @EndDate Group By Users.UserName UNION (SELECT UserName, 0 FROM Users WHERE ID NOT IN (SELECT DISTINCT UserID FROM WorkDay WHERE Datum &gt;= @StartDate AND Datum &lt;= @EndDate))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="StartDate" ColumnName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@StartDate" Precision="0" Scale="0" Size="4" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="EndDate" ColumnName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@EndDate" Precision="0" Scale="0" Size="4" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="UserName" DataSetColumn="UserName" />
+              <Mapping SourceColumn="Dolasci" DataSetColumn="Dolasci" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EvidencijaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="EvidencijaDataSet" msprop:Generator_UserDSName="EvidencijaDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="WorkDayReport" msprop:Generator_TableClassName="WorkDayReportDataTable" msprop:Generator_TableVarName="tableWorkDayReport" msprop:Generator_TablePropName="WorkDayReport" msprop:Generator_RowDeletingName="WorkDayReportRowDeleting" msprop:Generator_RowChangingName="WorkDayReportRowChanging" msprop:Generator_RowEvHandlerName="WorkDayReportRowChangeEventHandler" msprop:Generator_RowDeletedName="WorkDayReportRowDeleted" msprop:Generator_UserTableName="WorkDayReport" msprop:Generator_RowChangedName="WorkDayReportRowChanged" msprop:Generator_RowEvArgName="WorkDayReportRowChangeEvent" msprop:Generator_RowClassName="WorkDayReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="UserID" msprop:Generator_ColumnVarNameInTable="columnUserID" msprop:Generator_ColumnPropNameInRow="UserID" msprop:Generator_ColumnPropNameInTable="UserIDColumn" msprop:Generator_UserColumnName="UserID" type="xs:int" />
+              <xs:element name="WorkStart" msprop:Generator_ColumnVarNameInTable="columnWorkStart" msprop:Generator_ColumnPropNameInRow="WorkStart" msprop:Generator_ColumnPropNameInTable="WorkStartColumn" msprop:Generator_UserColumnName="WorkStart" type="xs:decimal" />
+              <xs:element name="WorkEnd" msprop:Generator_ColumnVarNameInTable="columnWorkEnd" msprop:Generator_ColumnPropNameInRow="WorkEnd" msprop:Generator_ColumnPropNameInTable="WorkEndColumn" msprop:Generator_UserColumnName="WorkEnd" type="xs:decimal" />
+              <xs:element name="WorkInLoged" msprop:Generator_ColumnVarNameInTable="columnWorkInLoged" msprop:Generator_ColumnPropNameInRow="WorkInLoged" msprop:Generator_ColumnPropNameInTable="WorkInLogedColumn" msprop:Generator_UserColumnName="WorkInLoged" type="xs:boolean" />
+              <xs:element name="WorkOutLoged" msprop:Generator_ColumnVarNameInTable="columnWorkOutLoged" msprop:Generator_ColumnPropNameInRow="WorkOutLoged" msprop:Generator_ColumnPropNameInTable="WorkOutLogedColumn" msprop:Generator_UserColumnName="WorkOutLoged" type="xs:boolean" />
+              <xs:element name="BreakTime" msprop:Generator_ColumnVarNameInTable="columnBreakTime" msprop:Generator_ColumnPropNameInRow="BreakTime" msprop:Generator_ColumnPropNameInTable="BreakTimeColumn" msprop:Generator_UserColumnName="BreakTime" type="xs:decimal" />
+              <xs:element name="BreakNumber" msprop:Generator_ColumnVarNameInTable="columnBreakNumber" msprop:Generator_ColumnPropNameInRow="BreakNumber" msprop:Generator_ColumnPropNameInTable="BreakNumberColumn" msprop:Generator_UserColumnName="BreakNumber" type="xs:int" />
+              <xs:element name="BreakLoged" msprop:Generator_ColumnVarNameInTable="columnBreakLoged" msprop:Generator_ColumnPropNameInRow="BreakLoged" msprop:Generator_ColumnPropNameInTable="BreakLogedColumn" msprop:Generator_UserColumnName="BreakLoged" type="xs:boolean" />
+              <xs:element name="BreakOvertime" msprop:Generator_ColumnVarNameInTable="columnBreakOvertime" msprop:Generator_ColumnPropNameInRow="BreakOvertime" msprop:Generator_ColumnPropNameInTable="BreakOvertimeColumn" msprop:Generator_UserColumnName="BreakOvertime" type="xs:decimal" />
+              <xs:element name="BusinessTime" msprop:Generator_ColumnVarNameInTable="columnBusinessTime" msprop:Generator_ColumnPropNameInRow="BusinessTime" msprop:Generator_ColumnPropNameInTable="BusinessTimeColumn" msprop:Generator_UserColumnName="BusinessTime" type="xs:decimal" />
+              <xs:element name="BusinessNumber" msprop:Generator_ColumnVarNameInTable="columnBusinessNumber" msprop:Generator_ColumnPropNameInRow="BusinessNumber" msprop:Generator_ColumnPropNameInTable="BusinessNumberColumn" msprop:Generator_UserColumnName="BusinessNumber" type="xs:int" />
+              <xs:element name="WorkDayTime" msprop:Generator_ColumnVarNameInTable="columnWorkDayTime" msprop:Generator_ColumnPropNameInRow="WorkDayTime" msprop:Generator_ColumnPropNameInTable="WorkDayTimeColumn" msprop:Generator_UserColumnName="WorkDayTime" type="xs:decimal" />
+              <xs:element name="WorkingTime" msprop:Generator_ColumnVarNameInTable="columnWorkingTime" msprop:Generator_ColumnPropNameInRow="WorkingTime" msprop:Generator_ColumnPropNameInTable="WorkingTimeColumn" msprop:Generator_UserColumnName="WorkingTime" type="xs:decimal" />
+              <xs:element name="OverTime" msprop:Generator_ColumnVarNameInTable="columnOverTime" msprop:Generator_ColumnPropNameInRow="OverTime" msprop:Generator_ColumnPropNameInTable="OverTimeColumn" msprop:Generator_UserColumnName="OverTime" type="xs:decimal" />
+              <xs:element name="LessTime" msprop:Generator_ColumnVarNameInTable="columnLessTime" msprop:Generator_ColumnPropNameInRow="LessTime" msprop:Generator_ColumnPropNameInTable="LessTimeColumn" msprop:Generator_UserColumnName="LessTime" type="xs:decimal" />
+              <xs:element name="Late" msprop:Generator_ColumnVarNameInTable="columnLate" msprop:Generator_ColumnPropNameInRow="Late" msprop:Generator_ColumnPropNameInTable="LateColumn" msprop:Generator_UserColumnName="Late" type="xs:decimal" />
+              <xs:element name="WorkDayType" msprop:Generator_ColumnVarNameInTable="columnWorkDayType" msprop:Generator_ColumnPropNameInRow="WorkDayType" msprop:Generator_ColumnPropNameInTable="WorkDayTypeColumn" msprop:Generator_UserColumnName="WorkDayType" type="xs:int" />
+              <xs:element name="SundayTime" msprop:Generator_ColumnVarNameInTable="columnSundayTime" msprop:Generator_ColumnPropNameInRow="SundayTime" msprop:Generator_ColumnPropNameInTable="SundayTimeColumn" msprop:Generator_UserColumnName="SundayTime" type="xs:decimal" />
+              <xs:element name="NightTime" msprop:Generator_ColumnVarNameInTable="columnNightTime" msprop:Generator_ColumnPropNameInRow="NightTime" msprop:Generator_ColumnPropNameInTable="NightTimeColumn" msprop:Generator_UserColumnName="NightTime" type="xs:decimal" />
+              <xs:element name="SchedualeID" msprop:Generator_ColumnVarNameInTable="columnSchedualeID" msprop:Generator_ColumnPropNameInRow="SchedualeID" msprop:Generator_ColumnPropNameInTable="SchedualeIDColumn" msprop:Generator_UserColumnName="SchedualeID" type="xs:int" />
+              <xs:element name="LogsNotOK" msprop:Generator_ColumnVarNameInTable="columnLogsNotOK" msprop:Generator_ColumnPropNameInRow="LogsNotOK" msprop:Generator_ColumnPropNameInTable="LogsNotOKColumn" msprop:Generator_UserColumnName="LogsNotOK" type="xs:boolean" minOccurs="0" />
+              <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_UserColumnName="FirstName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_UserColumnName="LastName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Datum" msprop:Generator_ColumnVarNameInTable="columnDatum" msprop:Generator_ColumnPropNameInRow="Datum" msprop:Generator_ColumnPropNameInTable="DatumColumn" msprop:Generator_UserColumnName="Datum" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Users" msprop:Generator_TableClassName="UsersDataTable" msprop:Generator_TableVarName="tableUsers" msprop:Generator_RowChangedName="UsersRowChanged" msprop:Generator_TablePropName="Users" msprop:Generator_RowDeletingName="UsersRowDeleting" msprop:Generator_RowChangingName="UsersRowChanging" msprop:Generator_RowEvHandlerName="UsersRowChangeEventHandler" msprop:Generator_RowDeletedName="UsersRowDeleted" msprop:Generator_RowClassName="UsersRow" msprop:Generator_UserTableName="Users" msprop:Generator_RowEvArgName="UsersRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="EnrollID" msprop:Generator_ColumnVarNameInTable="columnEnrollID" msprop:Generator_ColumnPropNameInRow="EnrollID" msprop:Generator_ColumnPropNameInTable="EnrollIDColumn" msprop:Generator_UserColumnName="EnrollID" type="xs:int" minOccurs="0" />
+              <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_UserColumnName="FirstName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_UserColumnName="LastName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Password" msprop:Generator_ColumnVarNameInTable="columnPassword" msprop:Generator_ColumnPropNameInRow="Password" msprop:Generator_ColumnPropNameInTable="PasswordColumn" msprop:Generator_UserColumnName="Password">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserPrivlage" msprop:Generator_ColumnVarNameInTable="columnUserPrivlage" msprop:Generator_ColumnPropNameInRow="UserPrivlage" msprop:Generator_ColumnPropNameInTable="UserPrivlageColumn" msprop:Generator_UserColumnName="UserPrivlage" type="xs:int" />
+              <xs:element name="Active" msprop:Generator_ColumnVarNameInTable="columnActive" msprop:Generator_ColumnPropNameInRow="Active" msprop:Generator_ColumnPropNameInTable="ActiveColumn" msprop:Generator_UserColumnName="Active" type="xs:boolean" />
+              <xs:element name="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" msprop:Generator_UserColumnName="Address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PostalCode" msprop:Generator_ColumnVarNameInTable="columnPostalCode" msprop:Generator_ColumnPropNameInRow="PostalCode" msprop:Generator_ColumnPropNameInTable="PostalCodeColumn" msprop:Generator_UserColumnName="PostalCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="City" msprop:Generator_ColumnVarNameInTable="columnCity" msprop:Generator_ColumnPropNameInRow="City" msprop:Generator_ColumnPropNameInTable="CityColumn" msprop:Generator_UserColumnName="City" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Phone" msprop:Generator_ColumnVarNameInTable="columnPhone" msprop:Generator_ColumnPropNameInRow="Phone" msprop:Generator_ColumnPropNameInTable="PhoneColumn" msprop:Generator_UserColumnName="Phone" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MobilePhone" msprop:Generator_ColumnVarNameInTable="columnMobilePhone" msprop:Generator_ColumnPropNameInRow="MobilePhone" msprop:Generator_ColumnPropNameInTable="MobilePhoneColumn" msprop:Generator_UserColumnName="MobilePhone" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SchedualeID" msprop:Generator_ColumnVarNameInTable="columnSchedualeID" msprop:Generator_ColumnPropNameInRow="SchedualeID" msprop:Generator_ColumnPropNameInTable="SchedualeIDColumn" msprop:Generator_UserColumnName="SchedualeID" type="xs:int" />
+              <xs:element name="DepartmentID" msprop:Generator_ColumnVarNameInTable="columnDepartmentID" msprop:Generator_ColumnPropNameInRow="DepartmentID" msprop:Generator_ColumnPropNameInTable="DepartmentIDColumn" msprop:Generator_UserColumnName="DepartmentID" type="xs:int" />
+              <xs:element name="CardID" msprop:Generator_ColumnVarNameInTable="columnCardID" msprop:Generator_ColumnPropNameInRow="CardID" msprop:Generator_ColumnPropNameInTable="CardIDColumn" msprop:Generator_UserColumnName="CardID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OIB" msprop:Generator_ColumnVarNameInTable="columnOIB" msprop:Generator_ColumnPropNameInRow="OIB" msprop:Generator_ColumnPropNameInTable="OIBColumn" msprop:Generator_UserColumnName="OIB" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sex" msprop:Generator_ColumnVarNameInTable="columnSex" msprop:Generator_ColumnPropNameInRow="Sex" msprop:Generator_ColumnPropNameInTable="SexColumn" msprop:Generator_UserColumnName="Sex" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BirthDate" msprop:Generator_ColumnVarNameInTable="columnBirthDate" msprop:Generator_ColumnPropNameInRow="BirthDate" msprop:Generator_ColumnPropNameInTable="BirthDateColumn" msprop:Generator_UserColumnName="BirthDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="InternalID" msprop:Generator_ColumnVarNameInTable="columnInternalID" msprop:Generator_ColumnPropNameInRow="InternalID" msprop:Generator_ColumnPropNameInTable="InternalIDColumn" msprop:Generator_UserColumnName="InternalID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WorkBeginDate" msprop:Generator_ColumnVarNameInTable="columnWorkBeginDate" msprop:Generator_ColumnPropNameInRow="WorkBeginDate" msprop:Generator_ColumnPropNameInTable="WorkBeginDateColumn" msprop:Generator_UserColumnName="WorkBeginDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ContractBeginDate" msprop:Generator_ColumnVarNameInTable="columnContractBeginDate" msprop:Generator_ColumnPropNameInRow="ContractBeginDate" msprop:Generator_ColumnPropNameInTable="ContractBeginDateColumn" msprop:Generator_UserColumnName="ContractBeginDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="WorkTitle" msprop:Generator_ColumnVarNameInTable="columnWorkTitle" msprop:Generator_ColumnPropNameInRow="WorkTitle" msprop:Generator_ColumnPropNameInTable="WorkTitleColumn" msprop:Generator_UserColumnName="WorkTitle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContractTypeID" msprop:Generator_ColumnVarNameInTable="columnContractTypeID" msprop:Generator_ColumnPropNameInRow="ContractTypeID" msprop:Generator_ColumnPropNameInTable="ContractTypeIDColumn" msprop:Generator_UserColumnName="ContractTypeID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataReport1" msprop:Generator_TableClassName="DataReport1DataTable" msprop:Generator_TableVarName="tableDataReport1" msprop:Generator_RowChangedName="DataReport1RowChanged" msprop:Generator_TablePropName="DataReport1" msprop:Generator_RowDeletingName="DataReport1RowDeleting" msprop:Generator_RowChangingName="DataReport1RowChanging" msprop:Generator_RowEvHandlerName="DataReport1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataReport1RowDeleted" msprop:Generator_RowClassName="DataReport1Row" msprop:Generator_UserTableName="DataReport1" msprop:Generator_RowEvArgName="DataReport1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Datum" msprop:Generator_ColumnVarNameInTable="columnDatum" msprop:Generator_ColumnPropNameInRow="Datum" msprop:Generator_ColumnPropNameInTable="DatumColumn" msprop:Generator_UserColumnName="Datum" type="xs:string" minOccurs="0" />
+              <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName" type="xs:string" minOccurs="0" />
+              <xs:element name="WorkStart" msprop:Generator_ColumnVarNameInTable="columnWorkStart" msprop:Generator_ColumnPropNameInRow="WorkStart" msprop:Generator_ColumnPropNameInTable="WorkStartColumn" msprop:Generator_UserColumnName="WorkStart" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WorkEnd" msprop:Generator_ColumnVarNameInTable="columnWorkEnd" msprop:Generator_ColumnPropNameInRow="WorkEnd" msprop:Generator_ColumnPropNameInTable="WorkEndColumn" msprop:Generator_UserColumnName="WorkEnd" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DanUMjesecu" msprop:Generator_ColumnVarNameInTable="columnDanUMjesecu" msprop:Generator_ColumnPropNameInRow="DanUMjesecu" msprop:Generator_ColumnPropNameInTable="DanUMjesecuColumn" msprop:Generator_UserColumnName="DanUMjesecu" type="xs:string" minOccurs="0" />
+              <xs:element name="ID_zapisa" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_zapisa" msprop:Generator_ColumnPropNameInRow="ID_zapisa" msprop:Generator_ColumnPropNameInTable="ID_zapisaColumn" msprop:Generator_UserColumnName="ID_zapisa" type="xs:int" />
+              <xs:element name="UserID" msprop:Generator_ColumnVarNameInTable="columnUserID" msprop:Generator_ColumnPropNameInRow="UserID" msprop:Generator_ColumnPropNameInTable="UserIDColumn" msprop:Generator_UserColumnName="UserID" type="xs:string" minOccurs="0" />
+              <xs:element name="UserName2" msprop:Generator_ColumnVarNameInTable="columnUserName2" msprop:Generator_ColumnPropNameInRow="UserName2" msprop:Generator_ColumnPropNameInTable="UserName2Column" msprop:Generator_UserColumnName="UserName2" type="xs:string" minOccurs="0" />
+              <xs:element name="UserName3" msprop:Generator_ColumnVarNameInTable="columnUserName3" msprop:Generator_ColumnPropNameInRow="UserName3" msprop:Generator_ColumnPropNameInTable="UserName3Column" msprop:Generator_UserColumnName="UserName3" type="xs:string" minOccurs="0" />
+              <xs:element name="UserName4" msprop:Generator_ColumnVarNameInTable="columnUserName4" msprop:Generator_ColumnPropNameInRow="UserName4" msprop:Generator_ColumnPropNameInTable="UserName4Column" msprop:Generator_UserColumnName="UserName4" type="xs:string" minOccurs="0" />
+              <xs:element name="WorkStart2" msprop:Generator_ColumnVarNameInTable="columnWorkStart2" msprop:Generator_ColumnPropNameInRow="WorkStart2" msprop:Generator_ColumnPropNameInTable="WorkStart2Column" msprop:Generator_UserColumnName="WorkStart2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WorkStart3" msprop:Generator_ColumnVarNameInTable="columnWorkStart3" msprop:Generator_ColumnPropNameInRow="WorkStart3" msprop:Generator_ColumnPropNameInTable="WorkStart3Column" msprop:Generator_UserColumnName="WorkStart3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WorkStart4" msprop:Generator_ColumnVarNameInTable="columnWorkStart4" msprop:Generator_ColumnPropNameInRow="WorkStart4" msprop:Generator_ColumnPropNameInTable="WorkStart4Column" msprop:Generator_UserColumnName="WorkStart4" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WorkEnd2" msprop:Generator_ColumnVarNameInTable="columnWorkEnd2" msprop:Generator_ColumnPropNameInRow="WorkEnd2" msprop:Generator_ColumnPropNameInTable="WorkEnd2Column" msprop:Generator_UserColumnName="WorkEnd2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WorkEnd3" msprop:Generator_ColumnVarNameInTable="columnWorkEnd3" msprop:Generator_ColumnPropNameInRow="WorkEnd3" msprop:Generator_ColumnPropNameInTable="WorkEnd3Column" msprop:Generator_UserColumnName="WorkEnd3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WorkEnd4" msprop:Generator_ColumnVarNameInTable="columnWorkEnd4" msprop:Generator_ColumnPropNameInRow="WorkEnd4" msprop:Generator_ColumnPropNameInTable="WorkEnd4Column" msprop:Generator_UserColumnName="WorkEnd4" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UserID2" msprop:Generator_ColumnVarNameInTable="columnUserID2" msprop:Generator_ColumnPropNameInRow="UserID2" msprop:Generator_ColumnPropNameInTable="UserID2Column" msprop:Generator_UserColumnName="UserID2" type="xs:string" minOccurs="0" />
+              <xs:element name="UserID3" msprop:Generator_ColumnVarNameInTable="columnUserID3" msprop:Generator_ColumnPropNameInRow="UserID3" msprop:Generator_ColumnPropNameInTable="UserID3Column" msprop:Generator_UserColumnName="UserID3" type="xs:string" minOccurs="0" />
+              <xs:element name="UserID4" msprop:Generator_ColumnVarNameInTable="columnUserID4" msprop:Generator_ColumnPropNameInRow="UserID4" msprop:Generator_ColumnPropNameInTable="UserID4Column" msprop:Generator_UserColumnName="UserID4" type="xs:string" minOccurs="0" />
+              <xs:element name="ZavrsniDatum" msprop:Generator_ColumnVarNameInTable="columnZavrsniDatum" msprop:Generator_ColumnPropNameInRow="ZavrsniDatum" msprop:Generator_ColumnPropNameInTable="ZavrsniDatumColumn" msprop:Generator_UserColumnName="ZavrsniDatum" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="WorkingDaysReport" msprop:Generator_TableClassName="WorkingDaysReportDataTable" msprop:Generator_TableVarName="tableWorkingDaysReport" msprop:Generator_TablePropName="WorkingDaysReport" msprop:Generator_RowDeletingName="WorkingDaysReportRowDeleting" msprop:Generator_RowChangingName="WorkingDaysReportRowChanging" msprop:Generator_RowEvHandlerName="WorkingDaysReportRowChangeEventHandler" msprop:Generator_RowDeletedName="WorkingDaysReportRowDeleted" msprop:Generator_UserTableName="WorkingDaysReport" msprop:Generator_RowChangedName="WorkingDaysReportRowChanged" msprop:Generator_RowEvArgName="WorkingDaysReportRowChangeEvent" msprop:Generator_RowClassName="WorkingDaysReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_User" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnID_User" msprop:Generator_ColumnPropNameInRow="ID_User" msprop:Generator_ColumnPropNameInTable="ID_UserColumn" msprop:Generator_UserColumnName="ID_User" type="xs:int" />
+              <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName" type="xs:string" minOccurs="0" />
+              <xs:element name="BrRadnihDana" msprop:Generator_ColumnVarNameInTable="columnBrRadnihDana" msprop:Generator_ColumnPropNameInRow="BrRadnihDana" msprop:Generator_ColumnPropNameInTable="BrRadnihDanaColumn" msprop:Generator_UserColumnName="BrRadnihDana" type="xs:string" minOccurs="0" />
+              <xs:element name="PocetniDatum" msprop:Generator_ColumnVarNameInTable="columnPocetniDatum" msprop:Generator_ColumnPropNameInRow="PocetniDatum" msprop:Generator_ColumnPropNameInTable="PocetniDatumColumn" msprop:Generator_UserColumnName="PocetniDatum" type="xs:string" minOccurs="0" />
+              <xs:element name="ZavrsniDatum" msprop:Generator_ColumnVarNameInTable="columnZavrsniDatum" msprop:Generator_ColumnPropNameInRow="ZavrsniDatum" msprop:Generator_ColumnPropNameInTable="ZavrsniDatumColumn" msprop:Generator_UserColumnName="ZavrsniDatum" type="xs:string" minOccurs="0" />
+              <xs:element name="User_row1" msprop:Generator_ColumnVarNameInTable="columnUser_row1" msprop:Generator_ColumnPropNameInRow="User_row1" msprop:Generator_ColumnPropNameInTable="User_row1Column" msprop:Generator_UserColumnName="User_row1" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="User_row2" msprop:Generator_ColumnVarNameInTable="columnUser_row2" msprop:Generator_ColumnPropNameInRow="User_row2" msprop:Generator_ColumnPropNameInTable="User_row2Column" msprop:Generator_UserColumnName="User_row2" type="xs:int" minOccurs="0" />
+              <xs:element name="UserName2" msprop:Generator_ColumnVarNameInTable="columnUserName2" msprop:Generator_ColumnPropNameInRow="UserName2" msprop:Generator_ColumnPropNameInTable="UserName2Column" msprop:Generator_UserColumnName="UserName2" type="xs:string" minOccurs="0" />
+              <xs:element name="BrRadnihDana2" msprop:Generator_ColumnVarNameInTable="columnBrRadnihDana2" msprop:Generator_ColumnPropNameInRow="BrRadnihDana2" msprop:Generator_ColumnPropNameInTable="BrRadnihDana2Column" msprop:Generator_UserColumnName="BrRadnihDana2" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UsersAndWorkDays" msprop:Generator_TableClassName="UsersAndWorkDaysDataTable" msprop:Generator_TableVarName="tableUsersAndWorkDays" msprop:Generator_RowChangedName="UsersAndWorkDaysRowChanged" msprop:Generator_TablePropName="UsersAndWorkDays" msprop:Generator_RowDeletingName="UsersAndWorkDaysRowDeleting" msprop:Generator_RowChangingName="UsersAndWorkDaysRowChanging" msprop:Generator_RowEvHandlerName="UsersAndWorkDaysRowChangeEventHandler" msprop:Generator_RowDeletedName="UsersAndWorkDaysRowDeleted" msprop:Generator_RowClassName="UsersAndWorkDaysRow" msprop:Generator_UserTableName="UsersAndWorkDays" msprop:Generator_RowEvArgName="UsersAndWorkDaysRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Dolasci" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDolasci" msprop:Generator_ColumnPropNameInRow="Dolasci" msprop:Generator_ColumnPropNameInTable="DolasciColumn" msprop:Generator_UserColumnName="Dolasci" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:WorkDayReport" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="DataReport1_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataReport1" />
+      <xs:field xpath="mstns:ID_zapisa" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

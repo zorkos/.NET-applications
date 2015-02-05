@@ -1,0 +1,81 @@
+C:\Users\prof\Dropbox\Zoran Kos\EvidencijaSSS\bin\Release\EvidencijaSSS.exe.config
+C:\Users\prof\Dropbox\Zoran Kos\EvidencijaSSS\bin\Release\EvidencijaSSS.exe
+C:\Users\prof\Dropbox\Zoran Kos\EvidencijaSSS\bin\Release\EvidencijaSSS.pdb
+C:\Users\prof\Dropbox\Zoran Kos\EvidencijaSSS\obj\Release\EvidencijaSSS.frmMain.resources
+C:\Users\prof\Dropbox\Zoran Kos\EvidencijaSSS\obj\Release\EvidencijaSSS.Properties.Resources.resources
+C:\Users\prof\Dropbox\Zoran Kos\EvidencijaSSS\obj\Release\EvidencijaSSS.csproj.GenerateResource.Cache
+C:\Users\prof\Dropbox\Zoran Kos\EvidencijaSSS\obj\Release\RdlCompile.cache
+C:\Users\prof\Dropbox\Zoran Kos\EvidencijaSSS\obj\Release\RdlCompile.compiled
+C:\Users\prof\Dropbox\Zoran Kos\EvidencijaSSS\obj\Release\EvidencijaSSS.exe
+C:\Users\prof\Dropbox\Zoran Kos\EvidencijaSSS\obj\Release\EvidencijaSSS.pdb
+D:\My Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\bin\Release\EvidencijaSSS.exe.config
+D:\My Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.exe
+D:\My Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.pdb
+D:\My Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\bin\Release\EvidencijaSSS.exe
+D:\My Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\bin\Release\EvidencijaSSS.pdb
+D:\My Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.csprojResolveAssemblyReference.cache
+D:\My Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.frmMain.resources
+D:\My Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.Properties.Resources.resources
+D:\My Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.csproj.GenerateResource.Cache
+D:\My Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\RdlCompile.cache
+D:\My Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\RdlCompile.compiled
+C:\Users\Zoran\Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\bin\Release\EvidencijaSSS.exe.config
+C:\Users\Zoran\Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.exe
+C:\Users\Zoran\Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.pdb
+C:\Users\Zoran\Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\bin\Release\EvidencijaSSS.exe
+C:\Users\Zoran\Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\bin\Release\EvidencijaSSS.pdb
+C:\Users\Zoran\Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.csprojResolveAssemblyReference.cache
+C:\Users\Zoran\Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.frmMain.resources
+C:\Users\Zoran\Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.Properties.Resources.resources
+C:\Users\Zoran\Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.csproj.GenerateResource.Cache
+C:\Users\Zoran\Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\RdlCompile.cache
+C:\Users\Zoran\Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\RdlCompile.compiled
+C:\Users\prof\Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\bin\Release\EvidencijaSSS.exe.config
+C:\Users\prof\Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.exe
+C:\Users\prof\Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.pdb
+D:\My Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\bin\Release\EvidencijaSSS.exe.manifest
+D:\My Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\bin\Release\EvidencijaSSS.application
+D:\My Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.TrustInfo.xml
+D:\My Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.exe.manifest
+D:\My Dropbox\Zoran Kos\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.application
+C:\Users\Zlatko\Desktop\zadnja_verzija_kos\EvidencijaSSS\bin\Release\EvidencijaSSS.exe.config
+C:\Users\Zlatko\Desktop\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.exe
+C:\Users\Zlatko\Desktop\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.pdb
+C:\Users\Zlatko\Desktop\zadnja_verzija_kos\EvidencijaSSS\bin\Release\EvidencijaSSS.exe.manifest
+C:\Users\Zlatko\Desktop\zadnja_verzija_kos\EvidencijaSSS\bin\Release\EvidencijaSSS.application
+C:\Users\Zlatko\Desktop\zadnja_verzija_kos\EvidencijaSSS\bin\Release\EvidencijaSSS.exe
+C:\Users\Zlatko\Desktop\zadnja_verzija_kos\EvidencijaSSS\bin\Release\EvidencijaSSS.pdb
+C:\Users\Zlatko\Desktop\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.csprojResolveAssemblyReference.cache
+C:\Users\Zlatko\Desktop\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.frmMain.resources
+C:\Users\Zlatko\Desktop\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.Properties.Resources.resources
+C:\Users\Zlatko\Desktop\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.csproj.GenerateResource.Cache
+C:\Users\Zlatko\Desktop\zadnja_verzija_kos\EvidencijaSSS\obj\Release\RdlCompile.cache
+C:\Users\Zlatko\Desktop\zadnja_verzija_kos\EvidencijaSSS\obj\Release\RdlCompile.compiled
+C:\Users\Zlatko\Desktop\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.TrustInfo.xml
+C:\Users\Zlatko\Desktop\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.exe.manifest
+C:\Users\Zlatko\Desktop\zadnja_verzija_kos\EvidencijaSSS\obj\Release\EvidencijaSSS.application
+D:\My Dropbox\Zoran Kos\EvidencijaSSS\bin\Release\EvidencijaSSS.exe.config
+D:\My Dropbox\Zoran Kos\EvidencijaSSS\obj\Release\EvidencijaSSS.exe
+D:\My Dropbox\Zoran Kos\EvidencijaSSS\obj\Release\EvidencijaSSS.pdb
+C:\Users\prof\Dropbox\Zoran Kos\EvidencijaSSS\bin\Release\EvidencijaSSS.exe.manifest
+C:\Users\prof\Dropbox\Zoran Kos\EvidencijaSSS\bin\Release\EvidencijaSSS.application
+C:\Users\prof\Dropbox\Zoran Kos\EvidencijaSSS\obj\Release\EvidencijaSSS.csprojResolveAssemblyReference.cache
+C:\Users\prof\Dropbox\Zoran Kos\EvidencijaSSS\obj\Release\EvidencijaSSS.TrustInfo.xml
+C:\Users\prof\Dropbox\Zoran Kos\EvidencijaSSS\obj\Release\EvidencijaSSS.exe.manifest
+C:\Users\prof\Dropbox\Zoran Kos\EvidencijaSSS\obj\Release\EvidencijaSSS.application
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\bin\Release\EvidencijaSSS.exe.config
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\EvidencijaSSS.exe
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\EvidencijaSSS.pdb
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\bin\Release\EvidencijaSSS.exe.manifest
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\bin\Release\EvidencijaSSS.application
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\bin\Release\EvidencijaSSS.exe
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\bin\Release\EvidencijaSSS.pdb
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\EvidencijaSSS.csprojResolveAssemblyReference.cache
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\EvidencijaSSS.frmMain.resources
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\EvidencijaSSS.Properties.Resources.resources
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\EvidencijaSSS.csproj.GenerateResource.Cache
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\RdlCompile.cache
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\RdlCompile.compiled
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\EvidencijaSSS.TrustInfo.xml
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\EvidencijaSSS.exe.manifest
+C:\Users\Zoran\Desktop\New folder (3)\EvidencijaSSS\obj\Release\EvidencijaSSS.application
